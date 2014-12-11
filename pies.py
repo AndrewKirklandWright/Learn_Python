@@ -1,11 +1,10 @@
-from TurtleWorld import *
-
 from math import pi
 from math import sin
-
+from TurtleWorld import *
 world = TurtleWorld()
 bob = Turtle()
 bob.delay = 0.0001
+
 print(bob)
 t = bob
 length = 100
