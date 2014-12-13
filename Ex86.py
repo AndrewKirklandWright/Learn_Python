@@ -7,10 +7,13 @@ def find(word, letter, index):
 
 def count(word,letter) :
     count = 0
-    index = 0
-    for i in range(len(word)) :
-        find(word,letter,index)
-        
+    i = 0
+    while i < len(word) :
+        i = find(word,letter,i)
+        if i == -1 :
+            break
+        count = count + 1
+        i = i + 1
     print("There are",count, "instances of ",letter)
 
 word = input("What word do you want to search? ") 
