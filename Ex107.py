@@ -21,4 +21,16 @@ def is_ananagram (word1, word2) :
 #    return True
  
 
-print(is_ananagram('doge', 'godw'))
+
+boo = open('words.txt')
+for line1 in boo :
+    line1 = boo.readline()
+    word1 = line1.strip()
+    fin = open('words.txt')
+    for line in fin :
+        line = fin.readline()
+        word2 = line.strip()
+        if word1 == word2:
+            break
+        elif is_ananagram(word1,word2) :
+            print(word1,word2)
